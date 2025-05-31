@@ -1,0 +1,76 @@
+.app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.username {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.editor {
+  border: 1px solid #ccc;
+  min-height: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+  background: white;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  position: relative;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 20px;
+  z-index: 1;
+}
+
+/* Cursor indicator */
+.cursor-indicator {
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  border-radius: 1px;
+  pointer-events: none;
+  animation: blink 1.2s step-start 0s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Login form styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.login-input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.login-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.login-button:hover {
+  background-color: #1d4ed8;
+}
